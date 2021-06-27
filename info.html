@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home - Fit For Fun Fitness Club</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body id="contactus">
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><img id="logo" src="ffflogo.png" alt="FFF logo"></li>
+          <li class="navlink"><a href="index.html">Home</a></li>
+          <li class="navlink"><a href="classes.html">Classes</a></li>
+          <li class="navlink"><a href="info.html">Info</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <h1 id="infoh1">Class Details</h1>
+      <form method="get" action="thankyou.html">
+        <h2>Please enter your information (required fields marked *)</h2>
+        <br>
+<!-- Peronsal Information Input -->
+        <label for="fname">
+          First Name*: 
+        <input autofocustype="text" id="fname" name="fname" required placeholder="First Name">
+        </label>
+        <label for="lname">
+          Last Name*:
+        <input type="text" name="lname" id="lname" required placeholder="Last Name">
+        </label>
+        <label for="email">
+          E-Mail Address:
+        <input type="email" id="email" name="email" required placeholder="example@contoso.com">
+        </label>
+        <label for="phone">
+          Phone Number:
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555">
+        </label>
+<!-- Contact selection -->
+        <br>
+        <label for ="contact"><h3>Best way we can reach you?</h3></label>
+        <select id="contactmethods" name="contact">
+          <option value="byphone">Phone</option>
+          <option value="byemail">E-Mail</option>
+          <option value="byowl">Owl</option>
+          <option value="byswallowe">Swallow (European)</option>
+          <option value="byswallowa">Swallow (African)</option>
+        </select>
+        <br>
+<!-- Class selection -->
+        <br>
+        <h3>Which classes are you interested in?</h3>
+        <br>
+        <div class="classselect">
+        <label for="">Cross Training
+        <input type="checkbox" id="crosstraining" name="crosstraining" value="">
+        </label>
+        <label for="">Sprint
+        <input type="checkbox" id="sprint" name="sprint" value="">
+        </label>
+        <label for="">Spin
+        <input type="checkbox" id="spin" name="spin" value="">
+        </label>
+        <label for="">BodyPump
+        <input type="checkbox" id="bodypump" name="bodypump" value="">
+        </label>
+        <label for="">BodyCombat
+        <input type="checkbox" id="bodycombat" name="bodycombat" value="">
+        </label>
+        <label for="">Step Interval
+        <input type="checkbox" id="stepinterval" name="stepinterval" value="">
+        </label>
+        <label for="">Advanced Cross Training
+        <input type="checkbox" id="advcrosstraining" name="advcrosstraining" value="">
+        </label>
+        <label for="">MixxedFIT
+        <input type="checkbox" id="mixxedfit" name="mixxedfit" value="">
+        </label>
+        <label for="">Zumba
+        <input type="checkbox" id="zumba" name="zumba" value="">
+        </label>
+        </div>
+<!-- Time of Day -->
+        <br>
+        <h3>Would you prefer a morning or evening class?</h3>
+        <br>
+        <label for="am">
+          Morning
+        <input type="radio" id="AM" name="time" value="AM">
+        </label>
+        <label for="pm">
+          Evening
+        <input type="radio" id="AM" name="time" value="AM">
+        </label>
+        <br>
+        <input class="submit" type="submit" value="Submit">
+
+      </form>
+
+    </div>
+    <footer>
+      <div class="footerLegal">
+      &copy;2021 &nbsp;&nbsp; Fit For Fun Fitness Club &nbsp; All Rights Reserved.
+    </div>
+    </footer>
+  </body>
+</html>

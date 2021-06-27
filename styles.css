@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/*
+    SU-CIS-130-W01
+    Author: Jeff Johnson
+    Date: 06/26/2021
+    Project: Fit For Fun Fitness Club
+    Goal: Working with tables and forms
+    File Name: styles.css
+*/
+
+
+/*  HTML Styles   */
+* {margin: 0;}
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: "Open Sans", Geneva, sans-serif;
+
+}
+/*  Header Styles   */
+header {
+  height: 75px;
+  background: linear-gradient(to right, rgb(39,68,114) 30%, rgb(65,114,159) );
+  color: white;
+}
+/* Body Styles */
+
+body {
+  width: 100%;
+}
+body#thankyoubody {
+  background-image: url(aerobics.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body#classbody {
+  background-image: url(zumba.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body#contactus {
+  background-image: url(chatting.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+body#opendoors {
+  background-image: url(opendoors.png);
+  background-size: cover;
+  background-attachment: fixed;
+  }
+  .welcome h1, .welcome h2{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: white;
+  }
+  .welcome h1{
+    font-size: 3.0em;
+    padding-top: 10px;
+  }
+
+/*  Navbar Styles   */
+nav {
+  top: 0;
+  width: 100%;
+
+}
+nav > ul {
+list-style-type: none;
+font-size: 1.9em;
+text-transform: uppercase;
+padding: 0;
+}
+#logo {
+  float: right;
+  padding-right: 20px;
+}
+body > header nav ul li {
+   padding: 0px 10px;
+   font-size: 1.0em;
+   list-style-type: none;
+
+}
+header nav ul li a {
+  color: white;
+}
+#navbar {
+  overflow: hidden;
+  height: 75px;
+  z-index: 100;
+}
+#navbar a {
+  text-decoration: none;
+  display: inline;
+  float: left;
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 15px;
+  height:75px;
+  color: white;
+  font-weight: bold;
+}
+#navbar a:hover {
+  color: rgb(39,68,114);
+  background-color: white;
+  font-weight: bold;
+
+}
+/*  Style for making navbar sticky   */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/*  Table Styles   */
+
+th, td{
+  padding: top 10px;
+
+}
+th {
+  background-color: rgb(88,133,175);
+  color: white;
+  font-size: 1.2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#tablehead {
+  text-shadow: 1px 1px 3px rgba(195,224,229, .4);
+  font-size: 1.4em;
+}
+table, th, td {
+  border: 3px rgb(39,68,114) solid;
+  opacity: .85;
+  border-collapse: collapse;
+  text-align: center;
+
+}
+tr:nth-child(even){
+  background-color: rgb(195,224,229);
+  color: rgb(39,68,114);
+}
+tr:nth-child(odd) {
+  background-color: white;
+  color: rgb(39,68,114);
+}
+
+table.schedule {
+  width: 80%;
+  margin: 80px 0px 0px 0px;
+
+}
+table.schedule ul {
+  list-style: none;
+
+}
+table.schedule ul li.instructor {
+  font-style: italic;
+}
+table.schedule ul li.course {
+  font-weight: bold;
+}
+/* Form styles */
+#infoh1 {
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.container {
+  width: 50%;
+  margin:auto;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  background-color: rgba(0,0,0, 40%);
+  color: white;
+}
+.classselect {
+  column-count: 3;
+}
+label {
+  display: block;
+  padding-bottom: 5px;
+  position: relative;
+}
+input#fname, input#lname, input#email, input#phone {
+  position: absolute;
+  left: 15%;
+  width: 40%;
+}
+.classselect {
+  padding-top: 5px;
+}
+.classselect input {
+  position: absolute;
+  left: 60%;
+}
+.submit {
+  position: relative;
+  width: initial;
+  background-color: white;
+  color: black;
+  font-size: 1.2em;
+}
+/*styles on thank you page */
+#thanksbuddy p {
+  font-size: 1.3em;
+}
+#thanksbuddy h2 {
+  text-align: center;
+  font-size: 2.3em;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+/* Footer Styles */
+footer {
+  clear: both;
+  position: absolute; bottom: 0; left: 0; right: 0;
+  margin-bottom: 0px;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(to right, rgb(39,68,114) 30%, rgb(65,114,159) );
+  color: white;
+}
+
+.footerLegal {
+  margin: auto;
+  padding: 10px;
+}

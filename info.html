@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!--
+    Course: SU-CIS-130-101
+    Author: Jeff Johnson
+    Date: 06/19/2021
+    Project: Fit For Fun Fitness Club
+    Subject: Assignment to create a company website.
+    File Name: info.html
+    -->
     <meta charset="utf-8">
     <title>Home - Fit For Fun Fitness Club</title>
     <link rel="stylesheet" href="styles.css">
@@ -23,8 +31,8 @@
         <br>
 <!-- Peronsal Information Input -->
         <label for="fname">
-          First Name*: 
-        <input autofocustype="text" id="fname" name="fname" required placeholder="First Name">
+          First Name*:
+        <input type="text" id="fname" name="fname" required placeholder="First Name">
         </label>
         <label for="lname">
           Last Name*:
@@ -40,8 +48,8 @@
         </label>
 <!-- Contact selection -->
         <br>
-        <label for ="contact"><h3>Best way we can reach you?</h3></label>
-        <select id="contactmethods" name="contact">
+        <h3><label for ="contact">Best way we can reach you?</label></h3>
+        <select id="contact" name="contact">
           <option value="byphone">Phone</option>
           <option value="byemail">E-Mail</option>
           <option value="byowl">Owl</option>
@@ -54,31 +62,31 @@
         <h3>Which classes are you interested in?</h3>
         <br>
         <div class="classselect">
-        <label for="">Cross Training
+        <label for="crosstraining">Cross Training
         <input type="checkbox" id="crosstraining" name="crosstraining" value="">
         </label>
-        <label for="">Sprint
+        <label for="sprint">Sprint
         <input type="checkbox" id="sprint" name="sprint" value="">
         </label>
-        <label for="">Spin
+        <label for="spin">Spin
         <input type="checkbox" id="spin" name="spin" value="">
         </label>
-        <label for="">BodyPump
+        <label for="bodypump">BodyPump
         <input type="checkbox" id="bodypump" name="bodypump" value="">
         </label>
-        <label for="">BodyCombat
+        <label for="bodycombat">BodyCombat
         <input type="checkbox" id="bodycombat" name="bodycombat" value="">
         </label>
-        <label for="">Step Interval
+        <label for="stepinterval">Step Interval
         <input type="checkbox" id="stepinterval" name="stepinterval" value="">
         </label>
-        <label for="">Advanced Cross Training
+        <label for="advcrosstraining">Advanced Cross Training
         <input type="checkbox" id="advcrosstraining" name="advcrosstraining" value="">
         </label>
-        <label for="">MixxedFIT
+        <label for="mixxedfit">MixxedFIT
         <input type="checkbox" id="mixxedfit" name="mixxedfit" value="">
         </label>
-        <label for="">Zumba
+        <label for="zumba">Zumba
         <input type="checkbox" id="zumba" name="zumba" value="">
         </label>
         </div>
@@ -88,11 +96,11 @@
         <br>
         <label for="am">
           Morning
-        <input type="radio" id="AM" name="time" value="AM">
+        <input type="radio" id="am" name="time" value="AM">
         </label>
         <label for="pm">
           Evening
-        <input type="radio" id="AM" name="time" value="AM">
+        <input type="radio" id="pm" name="time" value="AM">
         </label>
         <br>
         <input class="submit" type="submit" value="Submit">

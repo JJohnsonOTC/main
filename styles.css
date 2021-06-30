@@ -126,9 +126,13 @@ header nav ul li a {
 
 /*  Table Styles   */
 
-th, td{
-  padding: top 10px;
+td{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+td ul li {
+  padding-right: 20px;
 }
 th {
   background-color: rgb(88,133,175);
